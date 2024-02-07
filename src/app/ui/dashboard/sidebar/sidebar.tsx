@@ -1,8 +1,9 @@
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFaceLaughWink} from "@fortawesome/free-solid-svg-icons";
-import {Divider} from "@nextui-org/react";
+import {Accordion, AccordionItem, Divider} from "@nextui-org/react";
 import Link from "next/link";
+import React from "react";
 
 
 export function Sidebar() {
@@ -16,13 +17,61 @@ export function Sidebar() {
                 <Divider className="opacity-30"/>
 
                 <div>
+                    <Link href="/dashboard">
+                        <div className="flex text-white pt-5 pb-5 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 text-white mr-3"/>
+                            <p className="font-bold">Dashboard</p>
+                        </div>
+                    </Link>
+                    <Divider className="opacity-30"/>
+
+                    <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
                     <Link href="/">
-                        <div className="flex">
-                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-3 -rotate-12 text-white"/>
-                            <p>Dashboard</p>
+                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 mr-3"/>
+                            <p className="font-bold">Dashboard</p>
+                        </div>
+                    </Link>
+                    <Link href="/">
+                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12  mr-3"/>
+                            <p className="font-bold">Dashboard</p>
                         </div>
                     </Link>
 
+                    <Divider className="opacity-30"/>
+
+                    <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
+                    <Link href="/">
+                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 mr-3"/>
+                            <p className="font-bold">Dashboard</p>
+                        </div>
+                    </Link>
+                    <Link href="/">
+                        <div className="flex text-gray-200 hover:text-white pb-7 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 mr-3"/>
+                            <p className="font-bold">Dashboard</p>
+
+                        </div>
+                    </Link>
+
+                    <Link href="/">
+                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4">
+                            <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 mr-3"/>
+                            <p className="font-bold">Dashboard</p>
+                        </div>
+                    </Link>
+
+                    <Divider className="opacity-30"/>
+
+
+                </div>
+
+                <div className="w-[100%] flex justify-center mt-6">
+                    <div className="w-12 h-12 bg-gray-400 rounded-[100%] flex justify-center items-center text-gray-200 hover:bg-gray-300">
+                        <FontAwesomeIcon icon={faFaceLaughWink} className="w-4 -rotate-12 "/>
+                    </div>
                 </div>
 
             </div>

@@ -39,42 +39,42 @@ export function Sidebar({updateCompName, compactWindow}: any) {
                     </Link>
                     <Divider className="opacity-30"/>
 
-                    <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
+                    <h5 className={`${isCompact ? 'ml-4': 'text-[10px] mt-2 ml-2' } font-extrabold text-gray-300 text-xs mt-2`}>INTERFACE</h5>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap items-center">
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1' } font-bold flex text-gray-200 pt-5 pb-5  flex-wrap items-center`}>
                             <FontAwesomeIcon icon={faGear} className="size-3 mr-3"/>
-                            <p className="font-bold">Components</p>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Components</p>
                         </div>
                     </Link>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap items-center">
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1 flex-col' } font-bold flex text-gray-200 pt-5 pb-5  flex-wrap items-center`}>
                             <FontAwesomeIcon icon={faWrench} className="size-3 mr-3"/>
-                            <p className="font-bold">Utilities</p>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Utilities</p>
                         </div>
                     </Link>
 
                     <Divider className="opacity-30"/>
 
-                    <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
+                    <h5 className={`${isCompact ? 'ml-4': 'text-[10px] mt-2 ml-3' } font-extrabold text-gray-300 text-xs mt-2`}>ADDONS</h5>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap items-center">
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1 flex-col' } font-bold flex text-gray-200 pt-5 pb-5  flex-wrap items-center`}>
                             <FontAwesomeIcon icon={faFolder} className="size-3 mr-3"/>
-                            <p className="font-bold">Pages</p>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Pages</p>
                         </div>
                     </Link>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-7 ml-4 flex-wrap items-center">
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1 flex-col' } font-bold flex text-gray-200 pt-5 pb-5  flex-wrap items-center`}>
                             <FontAwesomeIcon icon={faChartArea} className="size-3 mr-3"/>
-                            <p className="font-bold">Charts</p>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Charts</p>
 
                         </div>
                     </Link>
 
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap items-center">
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1 flex-col' } font-bold flex text-gray-200 pt-5 pb-5  flex-wrap items-center`}>
                             <FontAwesomeIcon icon={faTable} className="size-3 mr-3"/>
 
-                            <p className="font-bold">Tables</p>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Tables</p>
 
                         </div>
                     </Link>

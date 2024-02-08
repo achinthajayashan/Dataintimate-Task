@@ -26,15 +26,15 @@ export function Sidebar({updateCompName, compactWindow}: any) {
             <div className="w-[90%]">
                 <div className="mt-6 flex justify-center items-center w-[100%] mb-4 flex-wrap">
                     <FontAwesomeIcon icon={faFaceLaughWink} className="-rotate-12 text-white size-8"/>
-                    <h1 className="font-bold text-white ml-4"> SB ADMIN</h1>
+                    <h1 className={`${isCompact ? 'visible': 'hidden' } font-bold text-white ml-4`}> SB ADMIN</h1>
                 </div>
                 <Divider className="opacity-30"/>
 
                 <div>
                     <Link href="/dashboard">
-                        <div className="flex text-white pt-5 pb-5 ml-4 flex-wrap items-center">
-                            <FontAwesomeIcon icon={faGaugeHigh} className="size-3 mr-3"/>
-                            <p className="font-bold">Dashboard</p>
+                        <div className={`${isCompact ? 'justify-normal ml-4': 'justify-center ml-1' } font-bold flex text-white pt-5 pb-5  flex-wrap items-center`}>
+                            <FontAwesomeIcon icon={faGaugeHigh} className="size-3"/>
+                            <p className={`${isCompact ? 'ml-3': 'text-[12px] mt-2' } font-bold `}>Dashboard</p>
                         </div>
                     </Link>
                     <Divider className="opacity-30"/>

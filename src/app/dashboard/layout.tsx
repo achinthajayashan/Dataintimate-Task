@@ -5,7 +5,7 @@ export default function Layout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <section className="w-screen h-screen flex">
+        <section className="w-screen h-auto flex">
             <div className=" ">
                 <Sidebar/>
             </div>

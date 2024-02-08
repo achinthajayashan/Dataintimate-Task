@@ -16,7 +16,7 @@ import React from "react";
 
 export function Sidebar() {
     return (
-        <section className="flex xl:w-60 h-screen bg-gradient-to-b from-[#4e73df] to-[#224abe] justify-center sm:w-20">
+        <section className="flex xl:w-60 h-full bg-gradient-to-b from-[#4e73df] to-[#224abe] justify-center sm:w-20">
             <div className="w-[90%]">
                 <div className="mt-6 flex justify-center items-center w-[100%] mb-4 flex-wrap">
                     <FontAwesomeIcon icon={faFaceLaughWink} className="w-8 -rotate-12 text-white"/>

@@ -3,11 +3,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendar, faClipboardList, faComments, faDollarSign, faDownload} from "@fortawesome/free-solid-svg-icons";
 import LineChart from "@/app/ui/dashboard/charts/line/LineChart";
 import DonutChart from "@/app/ui/dashboard/charts/donut/DonutChart";
-import React from "react";
+import React, {useState} from "react";
 
 
 
 function Page() {
+
     return (
         <div className="w-full min-h-full pt-6 px-8 overflow-x-hidden bg-gray-100 flex flex-col gap-y-8">
 

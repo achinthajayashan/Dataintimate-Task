@@ -1,4 +1,4 @@
-
+'use client'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faChartArea,
@@ -11,12 +11,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {Accordion, AccordionItem, Divider} from "@nextui-org/react";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 
 
-export function Sidebar() {
+export function Sidebar({updateCompName, compactWindow}: any) {
+    const [isCompact, setCompact] = useState(false);
+    const compactSideBar = () => {
+        compactWindow();
+        setCompact(!isCompact);
+    };
+
     return (
-        <section className="flex xl:w-60 h-full bg-gradient-to-b from-[#4e73df] to-[#224abe] justify-center sm:w-20">
+        <section className={`flex ${isCompact ? 'xl:w-60' : 'sm:w-20'} h-full bg-gradient-to-b from-[#4e73df] to-[#224abe] justify-center`}>
             <div className="w-[90%]">
                 <div className="mt-6 flex justify-center items-center w-[100%] mb-4 flex-wrap">
                     <FontAwesomeIcon icon={faFaceLaughWink} className="-rotate-12 text-white size-8"/>
@@ -79,7 +85,8 @@ export function Sidebar() {
                 </div>
 
                 <div className="w-[100%] flex justify-center mt-6" id="buttonsplit">
-                    <div className="w-10 h-10 bg-gray-400 rounded-[100%] flex justify-center items-center text-gray-200 hover:bg-gray-300">
+                    <div    onClick={compactSideBar}
+                        className="w-10 h-10 bg-gray-400 rounded-[100%] flex justify-center items-center text-gray-200 hover:bg-gray-300">
                         <FontAwesomeIcon icon={faChevronLeft} className="size-3"/>
                     </div>
                 </div>

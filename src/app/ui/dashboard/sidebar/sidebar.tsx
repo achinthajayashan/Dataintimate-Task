@@ -19,15 +19,15 @@ export function Sidebar() {
         <section className="flex xl:w-60 h-full bg-gradient-to-b from-[#4e73df] to-[#224abe] justify-center sm:w-20">
             <div className="w-[90%]">
                 <div className="mt-6 flex justify-center items-center w-[100%] mb-4 flex-wrap">
-                    <FontAwesomeIcon icon={faFaceLaughWink} className="w-8 -rotate-12 text-white"/>
+                    <FontAwesomeIcon icon={faFaceLaughWink} className="-rotate-12 text-white size-8"/>
                     <h1 className="font-bold text-white ml-4"> SB ADMIN</h1>
                 </div>
                 <Divider className="opacity-30"/>
 
                 <div>
                     <Link href="/dashboard">
-                        <div className="flex text-white pt-5 pb-5 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faGaugeHigh} className="w-4 mr-3"/>
+                        <div className="flex text-white pt-5 pb-5 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faGaugeHigh} className="size-3 mr-3"/>
                             <p className="font-bold">Dashboard</p>
                         </div>
                     </Link>
@@ -35,14 +35,14 @@ export function Sidebar() {
 
                     <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faGear} className="w-4 mr-3"/>
+                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faGear} className="size-3 mr-3"/>
                             <p className="font-bold">Components</p>
                         </div>
                     </Link>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faWrench} className="w-4 mr-3"/>
+                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faWrench} className="size-3 mr-3"/>
                             <p className="font-bold">Utilities</p>
                         </div>
                     </Link>
@@ -51,22 +51,22 @@ export function Sidebar() {
 
                     <h5 className="font-extrabold text-gray-300 text-xs ml-4 mt-2">INTERFACE</h5>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faFolder} className="w-4 mr-3"/>
+                        <div className="flex text-gray-200 hover:text-white pt-5 pb-7 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faFolder} className="size-3 mr-3"/>
                             <p className="font-bold">Pages</p>
                         </div>
                     </Link>
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-7 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faChartArea} className="w-4 mr-3"/>
+                        <div className="flex text-gray-200 hover:text-white pb-7 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faChartArea} className="size-3 mr-3"/>
                             <p className="font-bold">Charts</p>
 
                         </div>
                     </Link>
 
                     <Link href="/">
-                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap">
-                            <FontAwesomeIcon icon={faTable} className="w-4 mr-3"/>
+                        <div className="flex text-gray-200 hover:text-white pb-5 ml-4 flex-wrap items-center">
+                            <FontAwesomeIcon icon={faTable} className="size-3 mr-3"/>
 
                             <p className="font-bold">Tables</p>
 
@@ -80,7 +80,7 @@ export function Sidebar() {
 
                 <div className="w-[100%] flex justify-center mt-6" id="buttonsplit">
                     <div className="w-10 h-10 bg-gray-400 rounded-[100%] flex justify-center items-center text-gray-200 hover:bg-gray-300">
-                        <FontAwesomeIcon icon={faChevronLeft} className="w-2"/>
+                        <FontAwesomeIcon icon={faChevronLeft} className="size-3"/>
                     </div>
                 </div>
 

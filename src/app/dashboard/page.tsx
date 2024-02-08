@@ -1,6 +1,8 @@
-
+'use client'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendar, faClipboardList, faComments, faDollarSign, faDownload} from "@fortawesome/free-solid-svg-icons";
+import LineChart from "@/app/ui/dashboard/charts/line/LineChart";
+import DonutChart from "@/app/ui/dashboard/charts/donut/DonutChart";
 
 
 
@@ -69,6 +71,7 @@ function Page() {
                         <span>Earnings Overview</span>
 
                     </div>
+                    <LineChart/>
 
                 </div>
                 <div className="lg:w-[33%] w-full min-h-28 bg-white drop-shadow-md rounded-md">
@@ -78,7 +81,7 @@ function Page() {
 
                     </div>
                     <div className="lg:block flex justify-center">
-
+                    <DonutChart/>
                     </div>
                 </div>
             </div>

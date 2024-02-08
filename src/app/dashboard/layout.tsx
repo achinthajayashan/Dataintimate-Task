@@ -10,7 +10,7 @@ export default function Layout({children,}: Readonly<{
                 <Sidebar/>
             </div>
 
-            <div>
+            <div className="w-full">
                 <Navbar/>
                 {children}
             </div>

@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendar, faClipboardList, faComments, faDollarSign, faDownload} from "@fortawesome/free-solid-svg-icons";
 import LineChart from "@/app/ui/dashboard/charts/line/LineChart";
 import DonutChart from "@/app/ui/dashboard/charts/donut/DonutChart";
+import React from "react";
 
 
 
@@ -11,9 +12,9 @@ function Page() {
         <div className="w-full min-h-full pt-6 px-8 overflow-x-hidden bg-gray-100 flex flex-col gap-y-8">
 
             <div className="w-full flex justify-between">
-                <h2 className={'text-3xl font-light'}>Dashboard</h2>
+                <h2 className={'text-3xl font-light text-gray-600'}>Dashboard</h2>
                 <button className={'px-2 bg-[#4e73df] text-gray-100 flex items-center rounded-md'}>
-                    <FontAwesomeIcon icon={faDownload} className="w-4 text-gray-300 mr-3"/>
+                    <FontAwesomeIcon icon={faDownload} className="size-4 text-gray-300 mr-3"/>
                     Generate Report
                 </button>
             </div>
@@ -23,10 +24,10 @@ function Page() {
 
                     <div>
                         <span className={'text-xs text-[#4e73df] font-bold'}>EARNINGS (MONTHLY)</span>
-                        <h2>$40,000</h2>
+                        <h2 className="font-extrabold text-gray-500 text-xl">$40,000</h2>
                     </div>
 
-                    <FontAwesomeIcon icon={faCalendar} className="w-6 text-gray-300"/>
+                    <FontAwesomeIcon icon={faCalendar} className="size-8 text-gray-300"/>
 
 
 
@@ -36,9 +37,9 @@ function Page() {
 
                     <div>
                         <span className={'text-xs text-green-400 font-bold'}>EARNINGS (ANNUAL)</span>
-                        <h2>$215,000</h2>
+                        <h2 className="font-extrabold text-gray-500 text-xl">$215,000</h2>
                     </div>
-                    <FontAwesomeIcon icon={faDollarSign} className="w-6 text-gray-300"/>
+                    <FontAwesomeIcon icon={faDollarSign} className="size-8 text-gray-300"/>
 
                 </div>
                 <div className="lg:w-[24%] md:w-[45%] w-11/12 h-24 drop-shadow-lg bg-white rounded-md border-l-4 border-cyan-500 p-4 flex items-center justify-between">
@@ -46,21 +47,21 @@ function Page() {
                     <div className="w-full">
                         <span className="text-xs text-cyan-500 font-bold">TASKS</span>
                         <div className="flex items-center gap-x-4 pr-4">
-                            <h2>50%</h2>
+                            <h2 className="font-extrabold text-gray-500 text-xl">50%</h2>
                             <div className="w-full bg-gray-200 rounded-full h-2">
                                 <div className="bg-cyan-500 h-2 rounded-full w-[50%]"></div>
                             </div>
                         </div>
                     </div>
-                    <FontAwesomeIcon icon={faClipboardList} className="w-6 text-gray-300"/>
+                    <FontAwesomeIcon icon={faClipboardList} className="size-8 text-gray-300"/>
                 </div>
                 <div className="lg:w-[24%] md:w-[45%] w-11/12 h-24 drop-shadow-lg bg-white rounded-md border-l-4 border-yellow-500 p-4 flex items-center justify-between">
 
                     <div>
                         <span className="text-xs text-yellow-500 font-bold">PENDING REQUESTS</span>
-                        <h2>18</h2>
+                        <h2 className="font-extrabold text-gray-500 text-xl">18</h2>
                     </div>
-                    <FontAwesomeIcon icon={faComments} className="w-6 text-gray-300"/>
+                    <FontAwesomeIcon icon={faComments} className="size-8 text-gray-300"/>
                 </div>
             </div>
 
@@ -99,7 +100,7 @@ function Page() {
                         <div className="p-4 w-full">
 
                             <div className="my-8">
-                                <div className="flex justify-between text-xs font-semibold text-gray-600">
+                                <div className="flex justify-between text-xs font-semibold text-gray-500">
                                     <span>Server Migration</span>
                                     <span>20%</span>
                                 </div>
@@ -109,7 +110,7 @@ function Page() {
                             </div>
 
                             <div className="my-8">
-                                <div className={'flex justify-between text-xs font-semibold text-gray-600'}>
+                                <div className={'flex justify-between text-xs font-semibold text-gray-500'}>
                                     <span>Sales Tracking</span>
                                     <span>40%</span>
                                 </div>
@@ -119,7 +120,7 @@ function Page() {
                             </div>
 
                             <div className="my-8">
-                                <div className="flex justify-between text-xs font-semibold text-gray-600">
+                                <div className="flex justify-between text-xs font-semibold text-gray-500">
                                     <span>Customer Database</span>
                                     <span>40%</span>
                                 </div>
@@ -129,7 +130,7 @@ function Page() {
                             </div>
 
                             <div className="my-8">
-                                <div className="flex justify-between text-xs font-semibold text-gray-600">
+                                <div className="flex justify-between text-xs font-semibold text-gray-500">
                                     <span>Payout Details</span>
                                     <span>80%</span>
                                 </div>
@@ -139,7 +140,7 @@ function Page() {
                             </div>
 
                             <div className="my-8">
-                                <div className="flex justify-between text-xs font-semibold text-gray-600">
+                                <div className="flex justify-between text-xs font-semibold text-gray-500">
                                     <span>Account Setup</span>
                                     <span>complete</span>
                                 </div>
@@ -197,7 +198,7 @@ function Page() {
 
                 </div>
 
-                <div className="lg:w-1/2 w-full items-end flex flex-col gap-y-4 font-light">
+                <div className="lg:w-1/2 w-full items-end flex flex-col gap-y-4 font-light text-gray-500">
 
                     <div className="lg:w-[97%] w-full min-h-72 bg-white drop-shadow-lg rounded-md">
                         <div
@@ -206,6 +207,7 @@ function Page() {
                         </div>
                         <div className="flex flex-col gap-y-5 w-full p-4">
                             <div className="w-full flex justify-center">
+                                <img src="/undraw_posting_photo.svg" alt="Example" width={400} height={500} />
                             </div>
                             <p>Add some quality, svg illustrations to your project courtesy of unDraw,
                                 a constantly updated collection of beautiful svg images that you can use completely
